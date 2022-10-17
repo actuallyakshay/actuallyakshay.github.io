@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Button, Text, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
@@ -24,11 +24,40 @@ function Header() {
         <Box
           className="flex flex-row items-center items-center"
           gap={{ base: 5, md: 20 }}
+          pl={{ base: "5", md: "20" }}
         >
-          <Text fontFamily="Poppins" className="text-md text-gray-400 cursor-pointer ">HOME</Text>
-          <Text fontFamily="Poppins" className="text-md text-gray-400 cursor-pointer">ABOUT</Text>
-          <Text fontFamily="Poppins" className=" text-md text-gray-400 cursor-pointer">SKILL</Text>
-          <Text fontFamily="Poppins" className="text-md text-gray-400 cursor-pointer">PROJECTS</Text>
+          <Text
+            fontWeight="600"
+            color="#cdcdff"
+            fontFamily="Poppins"
+            className="text-md  cursor-pointer "
+          >
+            Home
+          </Text>
+          <Text
+            fontWeight="600"
+            color="#cdcdff"
+            fontFamily="Poppins"
+            className="text-md cursor-pointer"
+          >
+            About
+          </Text>
+          <Text
+            fontWeight="600"
+            color="#cdcdff"
+            fontFamily="Poppins"
+            className=" text-md  cursor-pointer"
+          >
+            Skills
+          </Text>
+          <Text
+            fontWeight="600"
+            color="#cdcdff"
+            fontFamily="Poppins"
+            className="text-md  cursor-pointer"
+          >
+            Projects
+          </Text>
         </Box>
       </motion.div>
       <motion.div
@@ -49,11 +78,16 @@ function Header() {
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="gray"
+          fgColor="#cdcdff"
           bgColor="transparent"
         />
-        <Text className="uppercase hidden md:inline-flex text-md text-gray-400 cursor-pointer">
-          get in touch
+        <Text
+          fontWeight="600"
+          color="#cdcdff"
+          display={{ base: "none", md: "inline-block" }}
+          pr={{ base: "5", md: "20" }}
+        >
+          Get In Touch
         </Text>
       </motion.div>
     </header>
