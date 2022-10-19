@@ -1,97 +1,137 @@
-import { Box, Button, Text, useColorMode } from "@chakra-ui/react";
-import React from "react";
-import { SocialIcon } from "react-social-icons";
+import { ReactNode } from "react";
+import {
+  Box,
+  Flex,
+  HStack,
+  IconButton,
+  Button,
+  useDisclosure,
+  useColorModeValue,
+  useColorMode,
+  VStack,
+  Heading,
+} from "@chakra-ui/react";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { NavLink } from "react-router-dom";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
+import Hero from "./Hero";
+import { useState } from "react";
+
+const Links = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"];
 
 function Header() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <header className="sticky top-0 pl-5 pr-5 flex items-start justify-between items-center max-w-7xl mx-auto">
-      <motion.div
-        initial={{
-          x: -500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.4,
-        }}
+    <>
+      <Box
+        fontFamily="Poppins"
+        bg={useColorModeValue("gray.100", "gray.800")}
+        px={{ base: "3", md: "8" }}
       >
-        <Box
-          className="flex flex-row items-center items-center"
-          gap={{ base: 5, md: 20 }}
-          pl={{ base: "5", md: "20" }}
+        <Flex
+          h={16}
+          alignItems={"center"}
+          justifyContent={"space-between"}
+          // color="#2C5282"
+          color={colorMode === "light" ? "#2C5282" : "orange.50"}
         >
-          <Text
-            fontWeight="600"
-            color="#cdcdff"
-            fontFamily="Poppins"
-            className="text-md  cursor-pointer "
+          <IconButton
+            size={"md"}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={"Open Menu"}
+            display={{ md: "none" }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          <HStack spacing={8} alignItems={"center"}>
+            <motion.div
+              initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: 0.8,
+              }}
+            >
+              <Heading letterSpacing={3} fontFamily={"Inspiration"}>
+                Akshay
+              </Heading>
+            </motion.div>
+          </HStack>
+          <HStack
+            as={"nav"}
+            spacing={20}
+            display={{ base: "none", md: "flex" }}
+            fontWeight="500"
+            fontSize="16px"
           >
-            Home
-          </Text>
-          <Text
-            fontWeight="600"
-            color="#cdcdff"
-            fontFamily="Poppins"
-            className="text-md cursor-pointer"
+            {Links.map((link) => (
+              <NavLink key={link}>{link}</NavLink>
+            ))}
+          </HStack>
+          <motion.div
+            initial={{
+              x: 500,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
           >
-            About
-          </Text>
-          <Text
-            fontWeight="600"
-            color="#cdcdff"
-            fontFamily="Poppins"
-            className=" text-md  cursor-pointer"
+            <Button
+              bg="transparent"
+              _hover={{ bg: "transparent" }}
+              onClick={toggleColorMode}
+            >
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </motion.div>
+        </Flex>
+        {isOpen ? (
+          <VStack
+            justifyContent={"center"}
+            flexDirection="row"
+            textAlign="center"
+            alignItems="center"
+            h="100vh"
+            display={{ md: "none" }}
+            fontWeight="500"
+            fontSize="16px"
           >
-            Skills
-          </Text>
-          <Text
-            fontWeight="600"
-            color="#cdcdff"
-            fontFamily="Poppins"
-            className="text-md  cursor-pointer"
-          >
-            Projects
-          </Text>
-        </Box>
-      </motion.div>
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{
-          duration: 1.4,
-        }}
-      >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="#cdcdff"
-          bgColor="transparent"
-        />
-        <Text
-          fontWeight="600"
-          color="#cdcdff"
-          display={{ base: "none", md: "inline-block" }}
-          pr={{ base: "5", md: "20" }}
-        >
-          Get In Touch
-        </Text>
-      </motion.div>
-    </header>
+            <VStack spacing={14} mt="20">
+              {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </VStack>
+          </VStack>
+        ) : null}
+        <section id="hero" className="snap-center">
+          <Hero colorMode={colorMode} />
+        </section>
+      </Box>
+    </>
   );
 }
 
 export default Header;
+
+/*
+
+ <motion.div
+        
+      >
+
+*/

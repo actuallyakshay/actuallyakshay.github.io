@@ -1,19 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Box } from '@chakra-ui/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 
+
+
+
 function App() {
   return (
-    <div className='bg-[rgb(35,40,62)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
-      {/* Header  */}
+    // <div className='h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div>
       <Header />
-
-      {/* Hero */}
-
-      <section id='hero' className='snap-center'>
-        <Hero />
-      </section>
+    
 
       {/* about */}
 
@@ -24,7 +22,7 @@ function App() {
 
       {/* contact me */}
 
-    </div>
+     </div>
   );
 }
 
