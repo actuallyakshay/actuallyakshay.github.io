@@ -32,14 +32,14 @@ function Hero({ colorMode }) {
         top="10"
         // zIndex={-1}
         opacity={colorMode === "light" ? ".9" : ".7"}
-        left={{ base: "0", md: "200px", lg: "530px" }}
+        left={{ base: "0", md: "350px", lg: "530px" }}
         overflow={"hidden"}
         display={{ base: "none", md: "flex" }}
       >
         <Image
           src="https://i.ibb.co/TW1CXQH/My-project.png"
-          h={{ md: "50vh", lg: "94vh" }}
-          w="100vw"
+          h={{ md: "45vh", lg: "94vh" }}
+          w={{base:'0' , md:"60vw" , lg :'98vw'}}
         />
       </Box>
       <Flex
@@ -53,7 +53,7 @@ function Hero({ colorMode }) {
         w={{ base: "98%", md: "60%" }}
         fontFamily="Poppins"
         // border="2px solid black"
-        pl={{ base: "3", md: "10" }}
+        pl={{ base: "3", md: "4" , lg:'10' }}
       >
         <motion.div
           initial={{
@@ -114,7 +114,7 @@ function Hero({ colorMode }) {
             fontSize="xs"
             letterSpacing="1px"
             fontFamily="Poppins"
-            width={{ base: "300px", md: "650px" }}
+            width={{ base: "300px", md:"280px", lg: "650px" }}
             color={colorMode === "light" ? "blackAlpha.700" : "gray.300"}
           >
             A Mern Stack Developer who loves solving problems and building
