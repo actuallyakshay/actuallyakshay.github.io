@@ -27,7 +27,7 @@ function Hero({ colorMode }) {
   });
   return (
     <>
-      <Box
+      {/* <Box
         position={"absolute"}
         top="10"
         // zIndex={-1}
@@ -37,11 +37,11 @@ function Hero({ colorMode }) {
         display={{ base: "none", md: "flex" }}
       >
         <Image
-          src="https://i.ibb.co/TW1CXQH/My-project.png"
+          // src="https://i.ibb.co/TW1CXQH/My-project.png"
           h={{ md: "45vh", lg: "94vh" }}
           w={{base:'0' , md:"60vw" , lg :'98vw'}}
         />
-      </Box>
+      </Box> */}
       <Flex
         className="overflow-hidden"
         flexDirection={"column"}
@@ -77,8 +77,8 @@ function Hero({ colorMode }) {
             Hi, I am
           </Text>
           <Heading
-            // color={colorMode === "light" ? "red.500" : "orange.200"}
-            color={colorMode === "light" ? "blue.700" : "orange.200"}
+            color={colorMode === "light" ? "black" : "orange.200"}
+            // color={colorMode === "light" ? "blue.700" : "orange.200"}
             fontFamily="Poppins"
             letterSpacing="1px"
             fontSize={"46px"}
@@ -127,19 +127,22 @@ function Hero({ colorMode }) {
             className="cursor-pointer"
             network="github"
             bgColor="transparent"
-            fgColor={colorMode === "light" ? "#2C5282" : "#FFFAF0"}
+            // fgColor={colorMode === "light" ? "#2C5282" : "#FFFAF0"}
+            fgColor={colorMode === "light" ? "black" : "#FFFAF0"}
           />
           <SocialIcon
             className="cursor-pointer"
             network="email"
             bgColor="transparent"
-            fgColor={colorMode === "light" ? "#2C5282" : "#FFFAF0"}
+            // fgColor={colorMode === "light" ? "#2C5282" : "#FFFAF0"}
+            fgColor={colorMode === "light" ? "black" : "#FFFAF0"}
           />
           <SocialIcon
             className="cursor-pointer"
             network="linkedin"
             bgColor="transparent"
-            fgColor={colorMode === "light" ? "#2C5282" : "#FFFAF0"}
+            // fgColor={colorMode === "light" ? "#2C5282" : "#FFFAF0"}
+            fgColor={colorMode === "light" ? "black" : "#FFFAF0"}
           />
         </Flex>
         <Button

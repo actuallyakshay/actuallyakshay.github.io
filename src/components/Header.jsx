@@ -35,7 +35,8 @@ function Header() {
           alignItems={"center"}
           justifyContent={"space-between"}
           // color="#2C5282"
-          color={colorMode === "light" ? "#2C5282" : "orange.50"}
+          // color={colorMode === "light" ? "#2C5282" : "orange.50"}
+          color={colorMode === "light" ? "black" : "orange.50"}
         >
           <IconButton
             size={"md"}
