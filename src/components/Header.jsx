@@ -58,7 +58,7 @@ function Header() {
                 scale: 1,
               }}
               transition={{
-                duration: 0.8,
+                duration: 1.2,
               }}
             >
               <Heading letterSpacing={3} fontFamily={"Inspiration"}>
@@ -89,7 +89,7 @@ function Header() {
               scale: 1,
             }}
             transition={{
-              duration: 0.8,
+              duration: 1.2,
             }}
           >
             <Button
