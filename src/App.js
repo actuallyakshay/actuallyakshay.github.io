@@ -1,7 +1,8 @@
-
-import { Box, useColorMode } from '@chakra-ui/react';
+import { Box, transition, useColorMode } from '@chakra-ui/react';
+import About from './components/About';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Projects from './components/Projects';
 
 
 
@@ -9,17 +10,24 @@ import Hero from './components/Hero';
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    // <div className='h-screen snap-y snap-mandatory overflow-scroll z-0'>
-    <div>
-      <Header />
+    <div className='App' style={{
+      scrollSnapType: 'y mandatory', height: '100vh', overflowY: 'scroll'
+    }}>
 
-      <section id="hero" className="snap-center">
+      <section id="hero" style={{ height: '100vh', scrollSnapAlign: 'start' }}>
+        <Header />
         <Hero colorMode={colorMode} />
       </section>
 
       {/* about */}
+      <section>
+        <About />
+      </section>
 
       {/* experience  */}
+      <section>
+        <Projects />
+      </section>
 
       {/* skills */}
 

@@ -66,7 +66,11 @@ function Hero({ colorMode }) {
             <Text color={colorMode === "light" ? "gray.600" : "white"}>
               {" "}
               <span
-                style={{ fontSize: "30px", fontWeight: "500", color: "red" }}
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "500",
+                  color: "#dd6b20",
+                }}
               >
                 Hi,{" "}
               </span>
@@ -74,7 +78,7 @@ function Hero({ colorMode }) {
             </Text>
             <Heading
               as="i"
-              color={colorMode === "light" ? "red.500" : "white"}
+              color={colorMode === "light" ? "orange.500" : "white"}
               fontSize={{ base: "42px", md: "62px" }}
             >
               Akshay Rajput
@@ -84,7 +88,7 @@ function Hero({ colorMode }) {
               color={colorMode === "light" ? "gray.700" : "white"}
               size="md"
             >
-              {<ChevronRightIcon />} {text}
+              {<ChevronRightIcon />} {text} <span><Cursor /></span>
             </Heading>
             <br />
             <Text
@@ -102,15 +106,11 @@ function Hero({ colorMode }) {
                 url="https://linkedin.com/in/jaketrent"
                 fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
                 style={{ height: 40, width: 40 }}
-                // bgColor='transparent'
-                // fgColor='black'
               />
               <SocialIcon
                 fgColor={colorMode === "light" ? "white" : "gray.300"}
                 url="https://github.com"
                 style={{ height: 40, width: 40 }}
-                // bgColor='transparent'
-                // fgColor='black'
               />
               <SocialIcon
                 url="https://mail.com"
