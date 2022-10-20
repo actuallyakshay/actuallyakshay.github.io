@@ -27,7 +27,7 @@ function Header() {
     <>
       <Box
         fontFamily="Poppins"
-        bg={useColorModeValue("gray.100", "gray.800")}
+        bg={useColorModeValue("", "gray.800")}
         px={{ base: "3", md: "8" }}
       >
         <Flex
@@ -119,9 +119,6 @@ function Header() {
             </VStack>
           </VStack>
         ) : null}
-        <section id="hero" className="snap-center">
-          <Hero colorMode={colorMode} />
-        </section>
       </Box>
     </>
   );
