@@ -47,7 +47,7 @@ function Projects() {
             </Heading>
             <motion.div
               initial={{
-                x: -300,
+                x: -200,
                 opacity: 0,
               }}
               transition={{
@@ -68,7 +68,7 @@ function Projects() {
             </Heading>
             <motion.div
               initial={{
-                x: -300,
+                x: -200,
                 opacity: 0,
               }}
               transition={{
@@ -86,7 +86,7 @@ function Projects() {
             </Heading>
             <motion.div
               initial={{
-                x: -300,
+                x: -200,
                 opacity: 0,
               }}
               transition={{

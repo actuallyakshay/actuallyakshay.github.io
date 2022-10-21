@@ -27,11 +27,13 @@ function Header() {
     <>
       <Box
         fontFamily="Poppins"
-        bg={useColorModeValue("", "gray.800")}
+        bg={useColorModeValue("gray.800", "gray.800")}
         px={{ base: "3", md: "8" }}
         position="sticky"
         top="0"
-        bgColor={"gray.200"}
+        // bgColor={"gray.200"}
+        color="#B8B8B8"
+        zIndex={4}
       >
         <Flex
           h={16}
@@ -39,7 +41,7 @@ function Header() {
           justifyContent={"space-between"}
           // color="#2C5282"
           // color={colorMode === "light" ? "#2C5282" : "orange.50"}
-          color={colorMode === "light" ? "black" : "orange.50"}
+          // color={colorMode === "light" ? "black" : "orange.50"}
         >
           <IconButton
             size={"md"}

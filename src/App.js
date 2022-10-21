@@ -2,7 +2,8 @@ import { Box, transition, useColorMode } from '@chakra-ui/react';
 import About from './components/About';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
+import Projects from './components/EducationAndExp';
+import WorkProjects from './pages/Skills';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <About />
 
       <Projects />
+      <WorkProjects />
 
     </div>
   );

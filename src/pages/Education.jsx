@@ -10,7 +10,7 @@ function Education() {
       </Heading>
       <motion.div
         initial={{
-          x: 300,
+          x: 80,
           opacity: 0,
         }}
         transition={{
@@ -31,7 +31,7 @@ function Education() {
       </Heading>
       <motion.div
         initial={{
-          x: 300,
+          x: 80,
           opacity: 0,
         }}
         transition={{
@@ -53,7 +53,7 @@ function Education() {
       </Heading>
       <motion.div
         initial={{
-          x: 300,
+          x: 80,
           opacity: 0,
         }}
         transition={{
