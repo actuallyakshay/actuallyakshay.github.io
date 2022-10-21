@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import Hero from "./Hero";
 import { useState } from "react";
 
-const Links = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT"];
+const Links = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT", "RESUME"];
 
 function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -29,6 +29,9 @@ function Header() {
         fontFamily="Poppins"
         bg={useColorModeValue("", "gray.800")}
         px={{ base: "3", md: "8" }}
+        position="sticky"
+        top="0"
+        bgColor={"gray.200"}
       >
         <Flex
           h={16}

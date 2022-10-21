@@ -9,91 +9,118 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
+import Education from "../pages/Education";
 
 function Projects() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        // backgroundColor: "pink",
-        scrollSnapAlign: "start",
-      }}
-    >
+    <>
+      <br />
+      <br />
+      <br />
       <Grid
         w="85%"
         gap="5"
         m="auto"
-        h="100vh"
-        // border="2px solid black"
-        gridTemplateColumns={"repeat(2,1fr)"}
+        gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
       >
         <Flex flexDirection="column">
           <Flex w="full" justifyContent={"center"}>
             <Text
               color="orange.500"
-              mt="8"
-              fontSize="20px"
+              fontSize="22px"
               letterSpacing="20px"
-              fontWeight="600"
+              fontWeight="700"
             >
               EXPERINECE
             </Text>
           </Flex>
           <br />
-          <br />
-          <br />
-          <motion.div
-            initial={{
-              x: -200,
-              opacity: 0,
-            }}
-            transition={{
-              duration: 0.8,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
+          <Flex
+            flexDirection="column"
+            gap="3"
+            pl={{ base: "2", md: "10" }}
+            mt="5"
+            lineHeight={"2"}
           >
-            <Flex flexDirection="column" gap="3" pl="10" mt="10">
-              <Heading letterSpacing={"1px"} size="md">
-                GRADUATE APPRENTICE TRAINEE
-              </Heading>
-              <Text letterSpacing={"1px"} as="i"  fontWeight={'400'}>
+            <Heading letterSpacing={"1px"} size="md">
+              GRADUATE APPRENTICE TRAINEE
+            </Heading>
+            <motion.div
+              initial={{
+                x: -300,
+                opacity: 0,
+              }}
+              transition={{
+                duration: 0.8,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+            >
+              <Text letterSpacing={"1px"} as="i" fontWeight={"400"}>
                 @ Bharat Petroleum Corporation Limited, Noida
               </Text>
-              <Heading letterSpacing={"1px"} as="i" size="sm">
-                {" "}
-                Duration
-              </Heading>
-              <Text  letterSpacing={"1px"}>02/2020 – 02/2021</Text>
-              <Heading letterSpacing={"1px"} as="i" size="sm">
-                Responsibilities
-              </Heading>
+            </motion.div>
+            <Heading letterSpacing={"1px"} as="i" size="sm">
+              {" "}
+              Duration
+            </Heading>
+            <motion.div
+              initial={{
+                x: -300,
+                opacity: 0,
+              }}
+              transition={{
+                duration: 0.8,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+            >
+              <Text letterSpacing={"1px"}>02/2020 – 02/2021</Text>
+            </motion.div>
+            <Heading letterSpacing={"1px"} as="i" size="sm">
+              Responsibilities
+            </Heading>
+            <motion.div
+              initial={{
+                x: -300,
+                opacity: 0,
+              }}
+              transition={{
+                duration: 0.8,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+            >
               <li style={{ letterSpacing: "1px" }} letterSpacing={"1px"}>
                 Worked as a Site Engineer
               </li>
               <li style={{ letterSpacing: "1px" }}>
                 Handled all the work flow at site
               </li>
-            </Flex>
-          </motion.div>
+            </motion.div>
+          </Flex>
         </Flex>
-        <Flex>
+        <Flex flexDirection="column" gap="10">
           <Flex w="full" justifyContent={"center"}>
             <Text
-              // color="orange.400"
-              mt="8"
+              color="orange.500"
               fontSize="20px"
-              letterSpacing="20px"
-              fontWeight="600"
+              letterSpacing="22px"
+              fontWeight="700"
             >
               EDUACTION
             </Text>
           </Flex>
+          <Education />
         </Flex>
       </Grid>
-    </div>
+    </>
   );
 }
 

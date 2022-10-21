@@ -10,29 +10,13 @@ import Projects from './components/Projects';
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <div className='App' style={{
-      scrollSnapType: 'y mandatory', height: '100vh', overflowY: 'scroll'
-    }}>
+    <div className='App'>
+      <Header />
+      <Hero colorMode={colorMode} />
 
-      <section id="hero" style={{ height: '100vh', scrollSnapAlign: 'start' }}>
-        <Header />
-        <Hero colorMode={colorMode} />
-      </section>
+      <About />
 
-      {/* about */}
-      <section>
-        <About />
-      </section>
-
-      {/* experience  */}
-      <section>
-        <Projects />
-      </section>
-
-      {/* skills */}
-
-
-      {/* contact me */}
+      <Projects />
 
     </div>
   );

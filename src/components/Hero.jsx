@@ -18,7 +18,6 @@ import {
   ViewIcon,
 } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
-import { AiOutlineSmallDash } from "react-icons/ai";
 
 function Hero({ colorMode }) {
   const [text, count] = useTypewriter({
@@ -39,7 +38,6 @@ function Hero({ colorMode }) {
         gridTemplateColumns={{ base: "1fr", md: "2fr 1fr" }}
         w="95%"
         m="auto"
-        // h="90vh"
         fontFamily="Poppins"
       >
         <motion.div
@@ -86,9 +84,12 @@ function Hero({ colorMode }) {
             <br />
             <Heading
               color={colorMode === "light" ? "gray.700" : "white"}
-              size="md"
+              size={{ base: "sm", md: "md" }}
             >
-              {<ChevronRightIcon />} {text} <span><Cursor /></span>
+              {<ChevronRightIcon />} {text}{" "}
+              <span>
+                <Cursor />
+              </span>
             </Heading>
             <br />
             <Text
@@ -145,7 +146,7 @@ function Hero({ colorMode }) {
               // src="https://i.ibb.co/XJL0jfd/94847-3d-working-environment.gif"
               // src="https://i.ibb.co/FYshXJk/57286-laptop-working.gif"
               src="https://i.ibb.co/jWLNQmH/109423-man-with-laptop-answering-email-next-to-plants.gif"
-              // src="https://i.ibb.co/N6msMjC/112681-developer-coding-on-laptop.gif"
+              // src="https://i.ibb.co/KbNvGPp/undraw-Freelancer-re-irh4.png"
               // borderRightRadius="200px"
               borderTopLeftRadius={"220px"}
               borderTopRightRadius={"200px"}
