@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Projects from './components/EducationAndExp';
 import WorkProjects from './pages/Skills';
+import Backgroung from './pages/Backgroung';
+import Project from './pages/Project';
 
 
 
@@ -11,17 +13,23 @@ import WorkProjects from './pages/Skills';
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <div className='App'>
+    <div className='App' style={{ backgroundColor: colorMode === 'light' ? "#F5F5F5" : '#1a202c' }} >
+
       <Header />
       <Hero colorMode={colorMode} />
 
       <About />
 
       <Projects />
-      <WorkProjects />
+
+      <Backgroung />
+      <Project />
 
     </div>
   );
 }
 
 export default App;
+
+
+// 

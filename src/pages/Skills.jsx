@@ -13,14 +13,14 @@ import { motion } from "framer-motion";
 let array = [
   "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-128.png",
   "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-128.png",
-  "https://i.ibb.co/7WVrwwH/9035061-logo-javascript-icon.png",
+  "https://i.ibb.co/jZMcZMC/javascript.png",
   "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-128.png",
-  "https://o.remove.bg/downloads/6e25431a-441c-49d4-96e2-a286662e7804/6202fcdee5ee8636a145a41b_1234-removebg-preview.png",
-  "https://o.remove.bg/downloads/2de0cc86-cfb4-486d-ae2d-f68d3b724858/png-transparent-mongodb-database-nosql-postgresql-mongo-text-logo-business-thumbnail-removebg-preview.png",
+  "https://i.ibb.co/8cx8KzC/6202fcdee5ee8636a145a41b-1234.png",
+  "https://i.ibb.co/dMhVT7t/mongodb.png",
   "https://o.remove.bg/downloads/c130e984-5f42-48af-a286-24ab82843df3/mongoose-removebg-preview.png",
   "https://cdn1.iconfinder.com/data/icons/soleicons-fill-vol-1/64/reactjs_javascript_library_atom_atomic_react-128.png",
 
-  "https://o.remove.bg/downloads/df8dfb2e-0eef-41eb-9e6a-6ce86843ca31/download-removebg-preview.png",
+  "https://i.ibb.co/RSvZL6j/redux.png",
   "https://i.ibb.co/4PNb6C0/rzyl-Ujaf-400x400-removebg-preview.png",
   "https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_github-128.png",
 
@@ -87,19 +87,6 @@ function WorkProjects() {
           })}
         </Grid>
       </Flex>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 }

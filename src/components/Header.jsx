@@ -31,9 +31,8 @@ function Header() {
         px={{ base: "3", md: "8" }}
         position="sticky"
         top="0"
-        // bgColor={"gray.200"}
-        color="#B8B8B8"
         zIndex={4}
+        color='white'
       >
         <Flex
           h={16}
