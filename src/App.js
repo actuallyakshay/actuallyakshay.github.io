@@ -22,14 +22,11 @@ function App() {
 
       <Projects />
 
-      <Backgroung />
-      <Project />
+      <Backgroung  />
+      <Project colorMode={colorMode} />
 
     </div>
   );
 }
 
 export default App;
-
-
-// 

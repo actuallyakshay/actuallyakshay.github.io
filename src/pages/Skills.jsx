@@ -17,7 +17,7 @@ let array = [
   "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-128.png",
   "https://i.ibb.co/8cx8KzC/6202fcdee5ee8636a145a41b-1234.png",
   "https://i.ibb.co/dMhVT7t/mongodb.png",
-  "https://o.remove.bg/downloads/c130e984-5f42-48af-a286-24ab82843df3/mongoose-removebg-preview.png",
+  "https://i.ibb.co/WBxWt8Q/mongoose-removebg-preview.png",
   "https://cdn1.iconfinder.com/data/icons/soleicons-fill-vol-1/64/reactjs_javascript_library_atom_atomic_react-128.png",
 
   "https://i.ibb.co/RSvZL6j/redux.png",
@@ -27,7 +27,7 @@ let array = [
   "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-128.png",
   "https://i.ibb.co/q14GdKr/4691397-postman-icon.png",
 
-  "https://o.remove.bg/downloads/9e426415-3468-47ca-91b8-a8a7118c5b84/png-transparent-data-structure-logo-brand-data-structure-blue-text-logo-thumbnail-removebg-preview.png",
+  "https://i.ibb.co/8z0pBHy/png-transparent-data-structure-logo-brand-data-structure-blue-text-logo-thumbnail-removebg-preview.png",
 ];
 
 function WorkProjects() {
