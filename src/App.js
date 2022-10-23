@@ -7,6 +7,7 @@ import WorkProjects from "./pages/Skills";
 import Backgroung from "./pages/Backgroung";
 import Project from "./pages/Project";
 import ContactMe from "./pages/ContactMe";
+import Github from "./components/Github";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -22,6 +23,9 @@ function App() {
       <Projects />
       <Backgroung />
       <Project colorMode={colorMode} />
+      <Github />
+      <br />
+      <br />
       <ContactMe />
     </div>
   );
