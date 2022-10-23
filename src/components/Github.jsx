@@ -1,18 +1,28 @@
 import { Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
-// import GitHubCalender from "react-github-calender";
+
+import GitHubCalendar from "react-github-calendar";
 
 function Github() {
-  //   const selectedyear =
+  const selectLastHalfYear = (contributions) => {
+    const currentYear = new Date().getFullYear();
+    const currentMonth = new Date().getMonth();
+    const shownMonths = 6;
+
+    return contributions.filter((day) => {
+      const date = new Date(day.date);
+      const monthOfDay = date.getMonth();
+
+      return (
+        date.getFullYear() === currentYear &&
+        monthOfDay > currentMonth - shownMonths &&
+        monthOfDay <= currentMonth
+      );
+    });
+  };
+
   return (
     <>
-      {/* <GitHubCalender
-        // style={{ margin: "auto" }}
-        username="actuallyakshay"
-        // transformData={selectedyear}
-        blockSize={20}
-        fontSize="20"
-      ></GitHubCalender> */}
       <br />
       <br />
       <Flex w="full" justifyContent={"center"}>
@@ -27,6 +37,16 @@ function Github() {
       </Flex>
       <br />
       <br />
+      <Flex justifyContent={"center"}>
+        <GitHubCalendar
+          username="actuallyakshay"
+          transformData={selectLastHalfYear}
+          blockRadius="2"
+          theme="nord"
+        />
+          </Flex>
+          <br />
+          <br />
       <Grid
         w="90%"
         m="auto"
