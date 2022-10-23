@@ -1,20 +1,20 @@
-import { Box, transition, useColorMode } from '@chakra-ui/react';
-import About from './components/About';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/EducationAndExp';
-import WorkProjects from './pages/Skills';
-import Backgroung from './pages/Backgroung';
-import Project from './pages/Project';
-
-
-
+import { Box, transition, useColorMode } from "@chakra-ui/react";
+import About from "./components/About";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Projects from "./components/EducationAndExp";
+import WorkProjects from "./pages/Skills";
+import Backgroung from "./pages/Backgroung";
+import Project from "./pages/Project";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
-  return (
-    <div className='App' style={{ backgroundColor: colorMode === 'light' ? "#F5F5F5" : '#1a202c' }} >
 
+  return (
+    <div
+      className="App"
+      style={{ backgroundColor: colorMode === "light" ? "#F5F5F5" : "#1a202c" }}
+    >
       <Header />
       <Hero colorMode={colorMode} />
 
@@ -22,11 +22,11 @@ function App() {
 
       <Projects />
 
-      <Backgroung  />
+      <Backgroung />
       <Project colorMode={colorMode} />
-
     </div>
   );
 }
+//hello
 
 export default App;
