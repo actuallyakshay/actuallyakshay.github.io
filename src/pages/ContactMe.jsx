@@ -184,12 +184,19 @@ function ContactMe() {
                   <VStack spacing={5}>
                     <FormControl id="name">
                       <FormLabel as="i">Your Name</FormLabel>
-                      <InputGroup borderColor="#E0E1E7">
+                      <InputGroup>
                         <InputLeftElement
                           pointerEvents="none"
                           children={<BsPerson color="gray.800" />}
                         />
-                        <Input type="text" size="md" />
+                        <Input
+                          _focus={{ outline: "none" }}
+                          border={"none"}
+                          outline="none"
+                          type="text"
+                          size="md"
+                          borderBottom={"1px solid gray"}
+                        />
                       </InputGroup>
                     </FormControl>
                     <FormControl id="name">
@@ -199,7 +206,16 @@ function ContactMe() {
                           pointerEvents="none"
                           children={<MdOutlineEmail color="gray.800" />}
                         />
-                        <Input type="text" size="md" />
+                        <Input
+                          type="text"
+                          size="md"
+                          _focus={{ outline: "none" }}
+                          border={"none"}
+                          outline="none"
+                          type="text"
+                          size="md"
+                          borderBottom={"1px solid gray"}
+                        />
                       </InputGroup>
                     </FormControl>
                     <FormControl id="name">
@@ -210,6 +226,13 @@ function ContactMe() {
                           borderRadius: "gray.300",
                         }}
                         placeholder="message"
+                        resize="none"
+                        _focus={{ outline: "none" }}
+                        border={"none"}
+                        outline="none"
+                        type="text"
+                        size="md"
+                        borderBottom={"1px solid gray"}
                       />
                     </FormControl>
                     <FormControl id="name" float="right">
