@@ -73,8 +73,7 @@ function Project({ colorMode }) {
             px="8"
           >
             <Flex alignItems={"center"} gap="5">
-              <InfoOutlineIcon />
-              <Heading letterSpacing={"2px"} as="ins" size="xl">
+              <Heading letterSpacing={"2px"}  size="xl">
                 {" "}
                 Food Store
               </Heading>
