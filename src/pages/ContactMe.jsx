@@ -73,6 +73,7 @@ function ContactMe() {
             <Box>
               <Box>
                 <br />
+                {/*TODO:  */}
                 <Text as="i" mt={{ sm: 3, md: 3, lg: 10 }} color="gray.600">
                   Fill up the form below to contact
                 </Text>
@@ -179,7 +180,7 @@ function ContactMe() {
           >
             <Box>
               <Box borderRadius="lg">
-                <Box m={8} color="#0B0E3F">
+                <Box m={8}>
                   <VStack spacing={5}>
                     <FormControl id="name">
                       <FormLabel as="i">Your Name</FormLabel>
