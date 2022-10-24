@@ -211,9 +211,6 @@ function ContactMe() {
                           size="md"
                           _focus={{ outline: "none" }}
                           border={"none"}
-                          outline="none"
-                          type="text"
-                          size="md"
                           borderBottom={"1px solid gray"}
                         />
                       </InputGroup>
@@ -252,6 +249,12 @@ function ContactMe() {
           </motion.div>
         </Grid>
       </Container>
+      <br />
+      <Flex textAlign={"center"} justifyContent="center" mb='1'>
+        <Text letterSpacing={"1px"}>
+          Designed and build by AKSHAY RAJPUT, @ 2022 All rights reserved
+        </Text>
+          </Flex>
     </>
   );
 }
