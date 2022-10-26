@@ -44,9 +44,9 @@ function Github() {
           blockRadius="2"
           theme="nord"
         />
-          </Flex>
-          <br />
-          <br />
+      </Flex>
+      <br />
+      <br />
       <Grid
         w="90%"
         m="auto"

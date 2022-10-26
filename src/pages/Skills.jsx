@@ -49,6 +49,7 @@ function WorkProjects() {
       <br />
       <br />
       <Flex justifyContent={"center"} alignItems="center">
+        
         <Grid
           m="auto"
           w="26%"

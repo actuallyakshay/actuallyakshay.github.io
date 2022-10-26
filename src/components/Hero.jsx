@@ -7,17 +7,15 @@ import {
   HStack,
   Image,
   Text,
+  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
-import {
-  ChevronRightIcon,
-  DownloadIcon,
-  MinusIcon,
-  ViewIcon,
-} from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
+import { BiMessageRoundedDetail } from "react-icons/bi";
+import { HiOutlineDownload } from "react-icons/hi";
 
 function Hero({ colorMode }) {
   const [text, count] = useTypewriter({
@@ -34,128 +32,93 @@ function Hero({ colorMode }) {
   return (
     <>
       <br />
-      <Grid
-        gridTemplateColumns={{ base: "1fr", md: "2fr 1fr" }}
+      <VStack
         w="95%"
         m="auto"
         fontFamily="Poppins"
+        h="80vh"
+        textAlign={"center"}
+        position="relative"
       >
-        <motion.div
-          initial={{
-            x: -500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.2,
-          }}
+        <Box
+          // display={{ base: "none", md: "flex" }}
+          position={"absolute"}
+          opacity={colorMode === "light" ? ".5" : ".1"}
+          w="500px"
+          color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
         >
-          <Flex
-            flexDirection="column"
-            px={{ base: "5", md: "8", lg: "20" }}
-            textAlign={"center"}
-            mt={{ base: "5", md: "20" }}
+          <BiMessageRoundedDetail fontSize="500px" />
+        </Box>
+        <Text mt="12" color={colorMode === "light" ? "gray.600" : "white"}>
+          {" "}
+          <span
+            style={{
+              fontSize: "30px",
+              fontWeight: "500",
+              color: "#dd6b20",
+            }}
           >
-            <Text color={colorMode === "light" ? "gray.600" : "white"}>
-              {" "}
-              <span
-                style={{
-                  fontSize: "30px",
-                  fontWeight: "500",
-                  color: "#dd6b20",
-                }}
-              >
-                Hi,{" "}
-              </span>
-              I am
-            </Text>
-            <Heading
-              as="i"
-              color={colorMode === "light" ? "orange.500" : "white"}
-              fontSize={{ base: "42px", md: "62px" }}
-            >
-              Akshay Rajput
-            </Heading>
-            <br />
-            <Heading
-              color={colorMode === "light" ? "gray.700" : "white"}
-              size={{ base: "sm", md: "md" }}
-            >
-              {<ChevronRightIcon />} {text}{" "}
-              <span>
-                <Cursor />
-              </span>
-            </Heading>
-            <br />
-            <Text
-              fontSize={"14px"}
-              color={colorMode === "light" ? "gray.600" : "white"}
-            >
-              A Mern Stack Developer who loves solving problems and building
-              projects. I am equipped with a variety of technologies and tools
-              to help me build the best possible product.
-            </Text>
-            <br />
-            <br />
-            <HStack justifyContent={"center"} spacing="4">
-              <SocialIcon
-                url="https://linkedin.com/in/jaketrent"
-                fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
-                style={{ height: 40, width: 40 }}
-              />
-              <SocialIcon
-                fgColor={colorMode === "light" ? "white" : "gray.300"}
-                url="https://github.com"
-                style={{ height: 40, width: 40 }}
-              />
-              <SocialIcon
-                url="https://mail.com"
-                className="cursor-pointer"
-                network="email"
-                fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
-                bgColor="orange"
-                style={{ height: 40, width: 40 }}
-              />
-            </HStack>
-          </Flex>
-        </motion.div>
-        <motion.div
-          initial={{
-            x: 500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.2,
-          }}
+            Hi,{" "}
+          </span>
+          I am
+        </Text>
+        <Heading
+          as="i"
+          color={colorMode === "light" ? "orange.500" : "white"}
+          fontSize={{ base: "42px", md: "72px" }}
         >
-          <Flex alignItems={"center"} justifyContent="center">
-            {/* TODO: */}
-
-            <Image
-              // src="https://i.ibb.co/XJL0jfd/94847-3d-working-environment.gif"
-              // src="https://i.ibb.co/FYshXJk/57286-laptop-working.gif"
-              src="https://i.ibb.co/jWLNQmH/109423-man-with-laptop-answering-email-next-to-plants.gif"
-              // src="https://i.ibb.co/KbNvGPp/undraw-Freelancer-re-irh4.png"
-              // borderRightRadius="200px"
-              borderTopLeftRadius={"220px"}
-              borderTopRightRadius={"200px"}
-              borderBottomRightRadius={"220px"}
-              w={{ base: "0px", md: "350px", lg: "500px" }}
-            />
-          </Flex>
-        </motion.div>
-      </Grid>
+          Akshay Rajput
+        </Heading>
+        <br />
+        <Heading
+          color={colorMode === "light" ? "gray.700" : "white"}
+          size={{ base: "sm", md: "md" }}
+        >
+          {<ChevronRightIcon />} {text}{" "}
+          <span>
+            <Cursor />
+          </span>
+        </Heading>
+        <br />
+        <Text
+          fontSize={"14px"}
+          color={colorMode === "light" ? "gray.600" : "white"}
+          width={{ base: "80%", md: "60%" }}
+        >
+          A Mern Stack Developer who loves solving problems and building
+          projects. I am equipped with a variety of technologies and tools to
+          help me build the best possible product.
+        </Text>
+        <br />
+        <HStack justifyContent={"center"} spacing="4" mb="2">
+          <SocialIcon
+            url="https://linkedin.com/in/jaketrent"
+            fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
+            style={{ height: 40, width: 40 }}
+          />
+          <SocialIcon
+            fgColor={colorMode === "light" ? "white" : "gray.300"}
+            url="https://github.com"
+            style={{ height: 40, width: 40 }}
+          />
+          <SocialIcon
+            url="https://mail.com"
+            className="cursor-pointer"
+            network="email"
+            fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
+            bgColor="orange"
+            style={{ height: 40, width: 40 }}
+          />
+        </HStack>
+        <br />
+        <Button
+          leftIcon={<HiOutlineDownload />}
+          borderRadius={"20px"}
+          colorScheme={"orange"}
+        >
+          Resume
+        </Button>
+      </VStack>
     </>
   );
 }

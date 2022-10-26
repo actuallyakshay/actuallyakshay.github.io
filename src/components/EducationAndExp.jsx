@@ -10,8 +10,9 @@ import {
 import { motion } from "framer-motion";
 import React from "react";
 import Education from "../pages/Education";
+import { FaUniversity } from "react-icons/fa";
 
-function Projects() {
+function Projects({ colorMode }) {
   return (
     <>
       <br />
@@ -22,7 +23,19 @@ function Projects() {
         gap="5"
         m="auto"
         gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
+        position="relative"
       >
+        <Box
+          display={{ base: "none", md: "flex" }}
+          position={"absolute"}
+          opacity={colorMode === "light" ? ".4" : ".1"}
+          w="500px"
+          left="20%"
+          top="-20%"
+          color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
+        >
+          <FaUniversity fontSize="450px" />
+        </Box>
         <Flex flexDirection="column">
           <Flex w="full" justifyContent={"center"}>
             <Text
@@ -31,7 +44,7 @@ function Projects() {
               letterSpacing="20px"
               fontWeight="700"
             >
-              EXPERINECE
+              EXPERIENCE
             </Text>
           </Flex>
           <br />

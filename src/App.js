@@ -20,13 +20,13 @@ function App() {
       <Header />
       <Hero colorMode={colorMode} />
       <About />
-      <Projects />
-      <Backgroung />
+      <Projects colorMode={colorMode} />
+      <Backgroung colorMode={colorMode} />
       <Project colorMode={colorMode} />
       <Github />
       <br />
       <br />
-      <ContactMe />
+      <ContactMe colorMode={colorMode} />
     </div>
   );
 }

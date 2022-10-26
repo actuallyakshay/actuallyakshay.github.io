@@ -31,8 +31,9 @@ import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 import { EmailIcon } from "@chakra-ui/icons";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { RiContactsLine } from "react-icons/ri";
 
-function ContactMe() {
+function ContactMe({ colorMode }) {
   return (
     <>
       <Flex w="full" justifyContent={"center"}>
@@ -46,7 +47,24 @@ function ContactMe() {
         </Text>
       </Flex>
       <br />
-      <Container maxW="full" mt={0} centerContent overflow="hidden">
+      <Container
+        maxW="full"
+        mt={0}
+        centerContent
+        overflow="hidden"
+        position="relative"
+      >
+        <Box
+          position={"absolute"}
+          opacity={colorMode === "light" ? ".4" : ".1"}
+          w="500px"
+          left="30%"
+          top="0"
+          color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
+          display={{base:'none' , md:'flex'}}
+        >
+          <RiContactsLine fontSize="400px" />
+        </Box>
         <Grid
           gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
           //   border="2px solid black"
@@ -250,11 +268,11 @@ function ContactMe() {
         </Grid>
       </Container>
       <br />
-      <Flex textAlign={"center"} justifyContent="center" mb='1'>
+      <Flex textAlign={"center"} justifyContent="center" mb="1">
         <Text letterSpacing={"1px"}>
           Designed and build by AKSHAY RAJPUT, @ 2022 All rights reserved
         </Text>
-          </Flex>
+      </Flex>
     </>
   );
 }
