@@ -40,7 +40,6 @@ function Hero({ colorMode }) {
         position="relative"
       >
         <Box
-          // display={{ base: "none", md: "flex" }}
           position={"absolute"}
           opacity={colorMode === "light" ? ".5" : ".1"}
           w="500px"
@@ -91,6 +90,7 @@ function Hero({ colorMode }) {
           projects. I am equipped with a variety of technologies and tools to
           help me build the best possible product.
         </Text>
+        
         <br />
         <HStack justifyContent={"center"} spacing="4" mb="2">
           <SocialIcon
