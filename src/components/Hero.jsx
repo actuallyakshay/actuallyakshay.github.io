@@ -35,7 +35,6 @@ function Hero({ colorMode }) {
       <VStack
         w="95%"
         m="auto"
-        fontFamily="Poppins"
         h="80vh"
         textAlign={"center"}
         position="relative"
@@ -81,9 +80,12 @@ function Hero({ colorMode }) {
         </Heading>
         <br />
         <Text
-          fontSize={"14px"}
-          color={colorMode === "light" ? "gray.600" : "white"}
+          fontSize={"16px"}
+          color={colorMode === "light" ? "blackAlpha.700" : "white"}
           width={{ base: "80%", md: "60%" }}
+          letterSpacing={"1px"}
+          as="i"
+          fontWeight={"400"}
         >
           A Mern Stack Developer who loves solving problems and building
           projects. I am equipped with a variety of technologies and tools to

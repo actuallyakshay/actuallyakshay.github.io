@@ -30,7 +30,7 @@ function Projects({ colorMode }) {
           position={"absolute"}
           opacity={colorMode === "light" ? ".4" : ".1"}
           w="500px"
-          left="20%"
+          left="25%"
           top="-20%"
           color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
         >

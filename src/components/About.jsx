@@ -70,18 +70,17 @@ function About() {
             x: 0,
           }}
         >
-          <Text>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ratione
-            eligendi nam odit! Quasi repellendus ipsam eos, eligendi obcaecati,
-            fugit, cumque temporibus culpa molestiae iusto molestias quis magnam
-            hic incidunt. Labore magni magnam eligendi excepturi, explicabo
-            aspernatur. Illo saepe reiciendis culpa debitis aspernatur quod quos
-            neque placeat iste voluptates? Fugiat ipsa fuga totam voluptatibus
-            optio suscipit quisquam odio obcaecati, fugit, cumque temporibus
-            culpa molestiae iusto molestias quis magnam hic incidunt. Labore
-            magni magnam eligendi excepturi, explicabo aspernatur. Illo saepe
-            reiciendis culpa debitis aspernatur quod quos neque placeat iste
-            voluptates? Fugiat ipsa fuga totam voluptatibus optio
+          <Text letterSpacing={"1px"} as="i" fontWeight={"400"} lineHeight='2'>
+            Hi everyone, I am Akshay Rajput from Bijnor, U.P. Currently I am
+            pursuing a Full-Stack Web Development Course from Masai School. I
+            have completed my graduation in Bachelor of Technology (Mechanical
+            Engineering) from Krishna Institute of Engineering and Technology,
+            Ghaziabad. After Completing my B.tech I joined Bharat Petroleum
+            Corporation Limited, Noida as a Graduate Apprentice Trainee for 1
+            year. During those days, I found myself drawn towards the tech world
+            so I started learning Full-Stack Web Development and after that I
+            joined Masai School , Which is a 7-Month long Intensive course with
+            1200+ hours of coding, DSA and hands-on Industry Relevant Skills.
           </Text>
         </motion.div>
       </Grid>
