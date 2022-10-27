@@ -23,7 +23,7 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
-import "../Images/image.png"
+import "../Images/image.png";
 
 function Project2({ colorMode }) {
   return (
@@ -38,7 +38,6 @@ function Project2({ colorMode }) {
           left="-50px"
           opacity=".1"
           transform="rotate(-8deg)"
-          // border='2px solid red'
         ></Box>
         <Grid
           position="absolute"
@@ -47,23 +46,25 @@ function Project2({ colorMode }) {
           h="60vh"
           gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
         >
-          <Image src="../Images/image.png" alt="x-x" w="full" />
-          <Flex
-            flexDirection="column"
-            gap="6"
-            // border="1px solid blue"
-            px="8"
-          >
+          <Image
+            src="https://i.postimg.cc/CLmtrsXc/002-1.png"
+            alt="x-x"
+            w="full"
+          />
+          <Flex flexDirection="column" gap="6" px="8">
             <Flex alignItems={"center"} gap="5">
               <Heading letterSpacing={"2px"} size="xl">
                 {" "}
-                Food Store
+                indeed clone
               </Heading>
             </Flex>
             <Text letterSpacing={"1px"} as="i" fontSize="13px">
-              This project is about an Online E-commerce food web application
-              showing the functionalities of an e-commerce website like sorting,
-              searching , filtering, add to cart, login/signup and many more.
+              Indeed is a free service to job seekers, where you can upload a
+              resume, create job alert emails, search for jobs, save them and
+              apply to them directly. We include all the job listings from major
+              job boards, newspapers, associations, and company career pages,
+              and employers can even post jobs directly to Indeed that may not
+              be available anywhere else.
             </Text>
             <Text
               letterSpacing={"1px"}
@@ -71,7 +72,7 @@ function Project2({ colorMode }) {
               fontWeight="400"
               mt="-3"
             >
-              <TimeIcon /> A Solo Project executed in 01 day
+              <TimeIcon /> A Solo Project executed in 04 day
             </Text>
             <HStack spacing="3" mt="-2">
               <Link>
@@ -111,11 +112,7 @@ function Project2({ colorMode }) {
             </HStack>
             <HStack>
               <PlusSquareIcon />
-              <Heading
-                // as="dotted"
-                size="sm"
-                letterSpacing={"1px"}
-              >
+              <Heading size="sm" letterSpacing={"1px"}>
                 Tech Stack
               </Heading>
             </HStack>

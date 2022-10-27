@@ -1,8 +1,9 @@
 import { Box, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
+import EducationExp from "./EducationAndExp";
 
-function About() {
+function About({colorMode}) {
   return (
     <>
       <Flex justifyContent={"center"} mt="80px">
@@ -70,7 +71,7 @@ function About() {
             x: 0,
           }}
         >
-          <Text letterSpacing={"1px"} as="i" fontWeight={"400"} lineHeight='2'>
+          <Text letterSpacing={"1px"} as="i" fontWeight={"400"} lineHeight="2">
             Hi everyone, I am Akshay Rajput from Bijnor, U.P. Currently I am
             pursuing a Full-Stack Web Development Course from Masai School. I
             have completed my graduation in Bachelor of Technology (Mechanical
@@ -86,6 +87,7 @@ function About() {
       </Grid>
       <br />
       <br />
+      {/* <EducationExp colorMode={colorMode} /> */}
     </>
   );
 }

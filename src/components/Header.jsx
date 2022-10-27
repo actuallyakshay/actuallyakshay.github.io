@@ -18,7 +18,14 @@ import { motion } from "framer-motion";
 import Hero from "./Hero";
 import { useState } from "react";
 
-const Links = ["HOME", "ABOUT", "SKILLS", "PROJECTS", "CONTACT", "RESUME"];
+const Links = [
+  { path: "/", title: "HOME" },
+  { path: "/about", title: "ABOUT" },
+  { path: "/skills", title: "SKILLS" },
+  { path: "/projects", title: "PROJECTS" },
+  { path: "/contact", title: "CONTACT" },
+  "RESUME",
+];
 
 function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -32,16 +39,9 @@ function Header() {
         position="sticky"
         top="0"
         zIndex={4}
-        color='white'
+        color="white"
       >
-        <Flex
-          h={16}
-          alignItems={"center"}
-          justifyContent={"space-between"}
-          // color="#2C5282"
-          // color={colorMode === "light" ? "#2C5282" : "orange.50"}
-          // color={colorMode === "light" ? "black" : "orange.50"}
-        >
+        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -77,8 +77,10 @@ function Header() {
             fontWeight="500"
             fontSize="16px"
           >
-            {Links.map((link) => (
-              <NavLink key={link}>{link}</NavLink>
+            {Links.map((elem) => (
+              <NavLink to={elem.path} key={elem.title}>
+                {elem.title}
+              </NavLink>
             ))}
           </HStack>
           <motion.div

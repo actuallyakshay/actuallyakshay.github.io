@@ -8,6 +8,7 @@ import Backgroung from "./pages/Backgroung";
 import Project from "./pages/Project";
 import ContactMe from "./pages/ContactMe";
 import Github from "./components/Github";
+import AllRoutes from "./pages/AllRoutes";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -27,6 +28,7 @@ function App() {
       <br />
       <br />
       <ContactMe colorMode={colorMode} />
+      {/* <AllRoutes colorMode={colorMode} /> */}
     </div>
   );
 }

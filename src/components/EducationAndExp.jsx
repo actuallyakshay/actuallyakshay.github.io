@@ -12,7 +12,7 @@ import React from "react";
 import Education from "../pages/Education";
 import { FaUniversity } from "react-icons/fa";
 
-function Projects({ colorMode }) {
+function EducationExp({ colorMode }) {
   return (
     <>
       <br />
@@ -137,4 +137,4 @@ function Projects({ colorMode }) {
   );
 }
 
-export default Projects;
+export default EducationExp;
