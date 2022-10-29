@@ -5,7 +5,7 @@ import EducationExp from "./EducationAndExp";
 
 function About({colorMode}) {
   return (
-    <>
+    <Box>
       <Flex justifyContent={"center"} mt="80px">
         <Text
           color="orange.500"
@@ -88,7 +88,7 @@ function About({colorMode}) {
       <br />
       <br />
       {/* <EducationExp colorMode={colorMode} /> */}
-    </>
+    </Box>
   );
 }
 

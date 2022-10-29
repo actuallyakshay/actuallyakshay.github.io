@@ -30,7 +30,7 @@ function Hero({ colorMode }) {
     deleteSpeed: 70,
   });
   return (
-    <>
+    <Box id="HERO__">
       <br />
       <VStack
         w="95%"
@@ -90,7 +90,7 @@ function Hero({ colorMode }) {
           projects. I am equipped with a variety of technologies and tools to
           help me build the best possible product.
         </Text>
-        
+
         <br />
         <HStack justifyContent={"center"} spacing="4" mb="2">
           <SocialIcon
@@ -113,15 +113,17 @@ function Hero({ colorMode }) {
           />
         </HStack>
         <br />
-        <Button
-          leftIcon={<HiOutlineDownload />}
-          borderRadius={"20px"}
-          colorScheme={"orange"}
-        >
-          Resume
-        </Button>
+        {/* <a href="" download={"Akshay-Rajput-Resume"}> */}
+          <Button
+            leftIcon={<HiOutlineDownload />}
+            borderRadius={"20px"}
+            colorScheme={"orange"}
+          >
+            Resume
+          </Button>
+        {/* </a> */}
       </VStack>
-    </>
+    </Box>
   );
 }
 

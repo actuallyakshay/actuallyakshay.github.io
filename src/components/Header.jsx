@@ -19,7 +19,7 @@ import Hero from "./Hero";
 import { useState } from "react";
 
 const Links = [
-  { path: "/", title: "HOME" },
+  { path: "HERO__", title: "HOME" },
   { path: "/about", title: "ABOUT" },
   { path: "/skills", title: "SKILLS" },
   { path: "/projects", title: "PROJECTS" },
@@ -78,9 +78,9 @@ function Header() {
             fontSize="16px"
           >
             {Links.map((elem) => (
-              <NavLink to={elem.path} key={elem.title}>
+              <a href={`#${elem.path}`} key={elem.title}>
                 {elem.title}
-              </NavLink>
+              </a>
             ))}
           </HStack>
           <motion.div
