@@ -28,7 +28,7 @@ function EducationExp({ colorMode }) {
         <Box
           display={{ base: "none", md: "flex" }}
           position={"absolute"}
-          opacity={colorMode === "light" ? ".4" : ".1"}
+          opacity={colorMode === "light" ? ".6" : ".1"}
           w="500px"
           left="25%"
           top="-20%"

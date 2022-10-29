@@ -14,10 +14,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <div
-      className="App"
-      style={{ backgroundColor: colorMode === "light" ? "#F5F5F5" : "#1a202c" }}
-    >
+    <div style={{overflowX:"hidden"}}>
       <Header />
       <Hero colorMode={colorMode} />
       <About />
@@ -28,7 +25,6 @@ function App() {
       <br />
       <br />
       <ContactMe colorMode={colorMode} />
-      {/* <AllRoutes colorMode={colorMode} /> */}
     </div>
   );
 }

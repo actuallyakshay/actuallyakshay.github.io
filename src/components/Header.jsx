@@ -15,16 +15,17 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
-import Hero from "./Hero";
-import { useState } from "react";
 
 const Links = [
   { path: "HERO__", title: "HOME" },
-  { path: "/about", title: "ABOUT" },
-  { path: "/skills", title: "SKILLS" },
-  { path: "/projects", title: "PROJECTS" },
-  { path: "/contact", title: "CONTACT" },
-  "RESUME",
+  { path: "ABOUT__", title: "ABOUT" },
+  { path: "SKILLS__", title: "SKILLS" },
+  { path: "PROJECTS__", title: "PROJECTS" },
+  { path: "CONTACT__", title: "CONTACT" },
+  // {
+  //   path: "https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf",
+  //   title: "RESUME",
+  // },
 ];
 
 function Header() {
@@ -36,8 +37,10 @@ function Header() {
         fontFamily="Poppins"
         bg={useColorModeValue("gray.800", "gray.800")}
         px={{ base: "3", md: "8" }}
-        position="sticky"
+        position="fixed"
         top="0"
+        left="0"
+        right="0"
         zIndex={4}
         color="white"
       >
@@ -82,6 +85,12 @@ function Header() {
                 {elem.title}
               </a>
             ))}
+            <a
+              href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
+              download={"Akshay-Rajput-Resume"}
+            >
+              RESUME
+            </a>
           </HStack>
           <motion.div
             initial={{
@@ -119,9 +128,17 @@ function Header() {
             fontSize="16px"
           >
             <VStack spacing={14} mt="20">
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+              {Links.map((elem) => (
+                <a href={`#${elem.path}`} key={elem.title}>
+                  {elem.title}
+                </a>
               ))}
+              <a
+                href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
+                download={"Akshay-Rajput-Resume"}
+              >
+                RESUME
+              </a>
             </VStack>
           </VStack>
         ) : null}

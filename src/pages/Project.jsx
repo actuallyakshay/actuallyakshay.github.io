@@ -27,10 +27,10 @@ import Project2 from "../components/Project2";
 
 function Project({ colorMode }) {
   return (
-    <>
+    <Box id="PROJECTS__" mt='10'>
       <br />
       <br />
-      <Flex w="full" justifyContent={"center"} >
+      <Flex w="full" justifyContent={"center"}>
         <Text
           color="orange.500"
           fontSize="22px"
@@ -43,7 +43,7 @@ function Project({ colorMode }) {
       </Flex>
       <Project1 colorMode={colorMode} />
       <Project2 colorMode={colorMode} />
-    </>
+    </Box>
   );
 }
 

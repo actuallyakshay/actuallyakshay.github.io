@@ -35,7 +35,7 @@ import { RiContactsLine } from "react-icons/ri";
 
 function ContactMe({ colorMode }) {
   return (
-    <>
+    <Box id="CONTACT__" pt="100px">
       <Flex w="full" justifyContent={"center"}>
         <Text
           color="orange.500"
@@ -56,12 +56,12 @@ function ContactMe({ colorMode }) {
       >
         <Box
           position={"absolute"}
-          opacity={colorMode === "light" ? ".4" : ".1"}
+          opacity={colorMode === "light" ? ".7" : ".1"}
           w="500px"
           left="30%"
           top="0"
           color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
-          display={{base:'none' , md:'flex'}}
+          display={{ base: "none", md: "flex" }}
         >
           <RiContactsLine fontSize="400px" />
         </Box>
@@ -273,7 +273,7 @@ function ContactMe({ colorMode }) {
           Designed and build by AKSHAY RAJPUT, @ 2022 All rights reserved
         </Text>
       </Flex>
-    </>
+    </Box>
   );
 }
 

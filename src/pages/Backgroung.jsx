@@ -5,11 +5,11 @@ import { GiSkills } from "react-icons/gi";
 
 function Backgroung({ colorMode }) {
   return (
-    <Box position="relative">
+    <Box position="relative" >
       <Box
         display={{ base: "none", md: "flex" }}
         position={"absolute"}
-        opacity={colorMode === "light" ? ".5" : ".1"}
+        opacity={colorMode === "light" ? ".8" : ".1"}
         w="500px"
         left="5%"
         top="27%"

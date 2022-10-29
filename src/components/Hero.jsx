@@ -30,7 +30,7 @@ function Hero({ colorMode }) {
     deleteSpeed: 70,
   });
   return (
-    <Box id="HERO__">
+    <Box id="HERO__" pt="12" >
       <br />
       <VStack
         w="95%"
@@ -41,7 +41,7 @@ function Hero({ colorMode }) {
       >
         <Box
           position={"absolute"}
-          opacity={colorMode === "light" ? ".5" : ".1"}
+          opacity={colorMode === "light" ? ".8" : ".1"}
           w="500px"
           color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
         >
@@ -113,7 +113,10 @@ function Hero({ colorMode }) {
           />
         </HStack>
         <br />
-        {/* <a href="" download={"Akshay-Rajput-Resume"}> */}
+        <a
+          href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
+          download={"Akshay-Rajput-Resume"}
+        >
           <Button
             leftIcon={<HiOutlineDownload />}
             borderRadius={"20px"}
@@ -121,7 +124,7 @@ function Hero({ colorMode }) {
           >
             Resume
           </Button>
-        {/* </a> */}
+        </a>
       </VStack>
     </Box>
   );

@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  InfoIcon,
-  InfoOutlineIcon,
   LinkIcon,
   PlusSquareIcon,
   TimeIcon,
@@ -10,18 +8,13 @@ import {
 import { Link } from "react-router-dom";
 import TechStack from "../components/TechStack";
 import {
-  Avatar,
   Box,
-  Center,
   Flex,
   Grid,
   Heading,
   HStack,
   Image,
-  ListIcon,
-  ListItem,
   Text,
-  UnorderedList,
 } from "@chakra-ui/react";
 
 function Project1({colorMode}) {
@@ -111,7 +104,6 @@ function Project1({colorMode}) {
             <HStack>
               <PlusSquareIcon />
               <Heading
-                // as="dotted"
                 size="sm"
                 letterSpacing={"1px"}
               >

@@ -1,11 +1,10 @@
 import { Box, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
-import EducationExp from "./EducationAndExp";
 
 function About({colorMode}) {
   return (
-    <Box>
+    <Box id='ABOUT__' pt='4'>
       <Flex justifyContent={"center"} mt="80px">
         <Text
           color="orange.500"
@@ -20,7 +19,6 @@ function About({colorMode}) {
       <br />
       <br />
       <Grid
-        //  fontFamily="Poppins"
         w="90%"
         m="auto"
         gap={{ base: "4", md: "10" }}
@@ -87,7 +85,6 @@ function About({colorMode}) {
       </Grid>
       <br />
       <br />
-      {/* <EducationExp colorMode={colorMode} /> */}
     </Box>
   );
 }

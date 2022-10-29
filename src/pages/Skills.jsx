@@ -32,7 +32,7 @@ let array = [
 
 function WorkProjects() {
   return (
-    <>
+    <Box id="SKILLS__" pt='8'>
       <br />
       <br />
       <br />
@@ -88,7 +88,7 @@ function WorkProjects() {
           })}
         </Grid>
       </Flex>
-    </>
+    </Box>
   );
 }
 
