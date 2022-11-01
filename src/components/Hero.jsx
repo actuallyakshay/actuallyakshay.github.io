@@ -7,6 +7,7 @@ import {
   HStack,
   Image,
   Text,
+  useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
@@ -30,7 +31,7 @@ function Hero({ colorMode }) {
     deleteSpeed: 70,
   });
   return (
-    <Box id="HERO__" pt="12" >
+    <Box id="HERO__" pt="14">
       <br />
       <VStack
         w="95%"
@@ -94,17 +95,17 @@ function Hero({ colorMode }) {
         <br />
         <HStack justifyContent={"center"} spacing="4" mb="2">
           <SocialIcon
-            url="https://linkedin.com/in/jaketrent"
+            url="https://www.linkedin.com/in/akshay-rajput-422794220/"
             fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
             style={{ height: 40, width: 40 }}
           />
           <SocialIcon
             fgColor={colorMode === "light" ? "white" : "gray.300"}
-            url="https://github.com"
+            url="https://github.com/actuallyakshay"
             style={{ height: 40, width: 40 }}
           />
           <SocialIcon
-            url="https://mail.com"
+            url="https://mail.google.com/mail/u/0/#inbox?compose=new"
             className="cursor-pointer"
             network="email"
             fgColor={colorMode === "light" ? "white" : "#FFFAF0"}

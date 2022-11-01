@@ -14,7 +14,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <div style={{overflowX:"hidden"}}>
+    <div style={{ overflowX: "hidden" }}>
       <Header />
       <Hero colorMode={colorMode} />
       <About />

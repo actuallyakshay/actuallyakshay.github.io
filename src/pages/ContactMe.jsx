@@ -151,30 +151,36 @@ function ContactMe({ colorMode }) {
                       damping: 60,
                     }}
                   >
-                    <IconButton
-                      aria-label="facebook"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#dd6b20", color: "white" }}
-                      icon={<FaLinkedinIn size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="github"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#dd6b20", color: "white" }}
-                      icon={<BsGithub size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="Send email"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#dd6b20", color: "white" }}
-                      icon={<EmailIcon size="28px" />}
-                    />
+                    <a href="https://www.linkedin.com/in/akshay-rajput-422794220/">
+                      <IconButton
+                        aria-label="linkedin"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#dd6b20", color: "white" }}
+                        icon={<FaLinkedinIn size="28px" />}
+                      />
+                    </a>
+                    <a href="https://github.com/actuallyakshay">
+                      <IconButton
+                        aria-label="github"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#dd6b20", color: "white" }}
+                        icon={<BsGithub size="28px" />}
+                      />
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                      <IconButton
+                        aria-label="Send email"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#dd6b20", color: "white" }}
+                        icon={<EmailIcon size="28px" />}
+                      />
+                    </a>
                   </motion.div>
                 </HStack>
               </Box>

@@ -22,10 +22,6 @@ const Links = [
   { path: "SKILLS__", title: "SKILLS" },
   { path: "PROJECTS__", title: "PROJECTS" },
   { path: "CONTACT__", title: "CONTACT" },
-  // {
-  //   path: "https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf",
-  //   title: "RESUME",
-  // },
 ];
 
 function Header() {
@@ -35,6 +31,7 @@ function Header() {
     <>
       <Box
         fontFamily="Poppins"
+        letterSpacing={'1.2px'}
         bg={useColorModeValue("gray.800", "gray.800")}
         px={{ base: "3", md: "8" }}
         position="fixed"
