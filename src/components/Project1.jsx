@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  LinkIcon,
-  PlusSquareIcon,
-  TimeIcon,
-} from "@chakra-ui/icons";
+import { LinkIcon, PlusSquareIcon, TimeIcon } from "@chakra-ui/icons";
 
 import { Link } from "react-router-dom";
 import TechStack from "../components/TechStack";
@@ -17,7 +13,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-function Project1({colorMode}) {
+function Project1({ colorMode }) {
   return (
     <>
       <Box position="relative" h="90vh" overflow="hidden" mt="5" w="100%">
@@ -66,7 +62,7 @@ function Project1({colorMode}) {
               <TimeIcon /> A Solo Project executed in 01 day
             </Text>
             <HStack spacing="3" mt="-2">
-              <Link>
+              <a href="https://foodorderingapp-eta.vercel.app/" target="_blank">
                 <Text
                   letterSpacing={"2px"}
                   fontSize="13px"
@@ -82,8 +78,11 @@ function Project1({colorMode}) {
                   {" "}
                   <LinkIcon /> See this live
                 </Text>
-              </Link>
-              <Link>
+              </a>
+              <a
+                href="https://github.com/actuallyakshay/FoodOrderingApp"
+                target="_blank"
+              >
                 <Text
                   letterSpacing={"2px"}
                   fontSize="13px"
@@ -99,14 +98,11 @@ function Project1({colorMode}) {
                   {" "}
                   <LinkIcon /> Github
                 </Text>
-              </Link>
+              </a>
             </HStack>
             <HStack>
               <PlusSquareIcon />
-              <Heading
-                size="sm"
-                letterSpacing={"1px"}
-              >
+              <Heading size="sm" letterSpacing={"1px"}>
                 Tech Stack
               </Heading>
             </HStack>
