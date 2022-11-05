@@ -31,23 +31,23 @@ function Hero({ colorMode }) {
     deleteSpeed: 70,
   });
   return (
-    <Box id="HERO__" pt="14">
+    <Box
+      id="HERO__"
+      pt="7"
+      overflow={"hidden"}
+      position="relative"
+      // bgColor={"rgb(36,36,36)"}
+      pb="12"
+    >
+      <Box position={"absolute"} w="100%">
+        <Image
+          src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+          opacity=".3"
+          w="100%"
+        />
+      </Box>
       <br />
-      <VStack
-        w="95%"
-        m="auto"
-        h="80vh"
-        textAlign={"center"}
-        position="relative"
-      >
-        <Box
-          position={"absolute"}
-          opacity={colorMode === "light" ? ".8" : ".1"}
-          w="500px"
-          color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
-        >
-          <BiMessageRoundedDetail fontSize="500px" />
-        </Box>
+      <VStack w="95%" m="auto" textAlign={"center"}>
         <Text mt="12" color={colorMode === "light" ? "gray.600" : "white"}>
           {" "}
           <span

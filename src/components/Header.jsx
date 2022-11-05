@@ -15,6 +15,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { NavLink } from "react-router-dom";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const Links = [
   { path: "HERO__", title: "HOME" },
@@ -78,16 +79,16 @@ function Header() {
             fontSize="16px"
           >
             {Links.map((elem) => (
-              <a href={`#${elem.path}`} key={elem.title}>
+              <AnchorLink href={`#${elem.path}`} key={elem.title}>
                 {elem.title}
-              </a>
+              </AnchorLink>
             ))}
-            <a
+            <AnchorLink
               href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
               download={"Akshay-Rajput-Resume"}
             >
               RESUME
-            </a>
+            </AnchorLink>
           </HStack>
           <motion.div
             initial={{
@@ -126,16 +127,16 @@ function Header() {
           >
             <VStack spacing={14} mt="20">
               {Links.map((elem) => (
-                <a href={`#${elem.path}`} key={elem.title}>
+                <AnchorLink href={`#${elem.path}`} key={elem.title}>
                   {elem.title}
-                </a>
+                </AnchorLink>
               ))}
-              <a
+              <AnchorLink
                 href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
                 download={"Akshay-Rajput-Resume"}
               >
                 RESUME
-              </a>
+              </AnchorLink>
             </VStack>
           </VStack>
         ) : null}
