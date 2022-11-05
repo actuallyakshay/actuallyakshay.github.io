@@ -58,6 +58,7 @@ function Project1({ colorMode }) {
               fontSize="13px"
               fontWeight="400"
               mt="-3"
+
             >
               <TimeIcon /> A Solo Project executed in 01 day
             </Text>
