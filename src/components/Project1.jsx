@@ -26,7 +26,6 @@ function Project1({ colorMode }) {
           left="-50px"
           opacity=".1"
           transform="rotate(-8deg)"
-          // border='2px solid red'
         ></Box>
         <Grid
           position="absolute"
@@ -39,7 +38,6 @@ function Project1({ colorMode }) {
           <Flex
             flexDirection="column"
             gap="6"
-            // border="1px solid blue"
             px="8"
           >
             <Flex alignItems={"center"} gap="5">

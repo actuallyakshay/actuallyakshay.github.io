@@ -14,8 +14,6 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion";
-import { BiMessageRoundedDetail } from "react-icons/bi";
 import { HiOutlineDownload } from "react-icons/hi";
 
 function Hero({ colorMode }) {
@@ -36,7 +34,6 @@ function Hero({ colorMode }) {
       pt="7"
       overflow={"hidden"}
       position="relative"
-      // bgColor={"rgb(36,36,36)"}
       pb="12"
     >
       <Box position={"absolute"} w="100%">

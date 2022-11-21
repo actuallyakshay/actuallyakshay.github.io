@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex, Grid, HStack, Text } from "@chakra-ui/react";
+import { Avatar, Grid, HStack, Text } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
 

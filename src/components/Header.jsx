@@ -12,10 +12,10 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll"
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Links = [
   { path: "HERO__", title: "HOME" },
@@ -32,7 +32,7 @@ function Header() {
     <>
       <Box
         fontFamily="Poppins"
-        letterSpacing={'1.2px'}
+        letterSpacing={"1.2px"}
         bg={useColorModeValue("gray.800", "gray.800")}
         px={{ base: "3", md: "8" }}
         position="fixed"
@@ -83,12 +83,12 @@ function Header() {
                 {elem.title}
               </AnchorLink>
             ))}
-            <AnchorLink
+            <a
               href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
               download={"Akshay-Rajput-Resume"}
             >
               RESUME
-            </AnchorLink>
+            </a>
           </HStack>
           <motion.div
             initial={{
@@ -131,12 +131,12 @@ function Header() {
                   {elem.title}
                 </AnchorLink>
               ))}
-              <AnchorLink
+              <a
                 href="https://github.com/actuallyakshay/actuallyakshay.github.io/raw/master/Akshay-Rajput-Resume.pdf"
                 download={"Akshay-Rajput-Resume"}
               >
                 RESUME
-              </AnchorLink>
+              </a>
             </VStack>
           </VStack>
         ) : null}

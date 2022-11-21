@@ -12,7 +12,7 @@ function About({colorMode}) {
           letterSpacing="20px"
           fontWeight="700"
         >
-          ABOUT
+        ABOUT
         </Text>
       </Flex>
       <br />

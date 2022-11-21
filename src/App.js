@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div style={{ overflowX: "hidden" }}>
-      {/* <Box bg={useColorModeValue("white", "rgb(36,36,36)")}> */}
         <Header />
         <Hero colorMode={colorMode} />
         <About />
@@ -24,10 +23,8 @@ function App() {
         <br />
         <br />
         <ContactMe colorMode={colorMode} />
-      {/* </Box> */}
     </div>
   );
 }
-//hel
 
 export default App;
