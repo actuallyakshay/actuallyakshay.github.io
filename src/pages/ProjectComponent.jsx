@@ -11,7 +11,15 @@ import React from "react";
 import { AiFillEye } from "react-icons/ai";
 import { BsFillCameraVideoFill, BsGithub } from "react-icons/bs";
 
-function ProjectComponent({ image, title, techStack, desc }) {
+function ProjectComponent({
+  image,
+  title,
+  techStack,
+  desc,
+  link,
+  watch,
+  github,
+}) {
   return (
     <Flex
       direction="column"
@@ -55,9 +63,15 @@ function ProjectComponent({ image, title, techStack, desc }) {
       <br />
       <Box mt="auto" w="full">
         <HStack w="60%" m="auto" justifyContent={"space-between"}>
-          <AiFillEye fontSize={"40px"} />
-          <BsGithub fontSize={"35px"} />
-          <BsFillCameraVideoFill fontSize={"35px"} />
+          <a href={link}>
+            <AiFillEye fontSize={"40px"} />
+          </a>
+          <a href={github}>
+            <BsGithub fontSize={"35px"} />
+          </a>
+          <a href={watch}>
+            <BsFillCameraVideoFill fontSize={"35px"} />
+          </a>
         </HStack>
       </Box>
     </Flex>
