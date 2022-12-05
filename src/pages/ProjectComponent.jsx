@@ -41,10 +41,10 @@ function ProjectComponent({
       <Box w="90%" mx="auto">
         <Text
           // as='kbd'
-          fontSize={"14px"}
+          fontSize={"13px"}
           color="blackAlpha.800"
           fontWeight={"400"}
-          letterSpacing=".6px"
+          letterSpacing=".8px"
         >
           {desc}
         </Text>
