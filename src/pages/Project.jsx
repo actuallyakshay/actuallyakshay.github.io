@@ -83,7 +83,7 @@ const arr = [
     title: "Cultsport Clone",
     techStack: "NodeJS, expressJS, mongoDB, React, Redux, chakra-UI",
     desc: "This Project is about building an online E-Commerce web application with backend integration showing all the functionalities of an E-Commerce website along with the admin dashboard panel. This is private repository to protect the code for its uniqueness.",
-    link: "https://cultstore.netlify.app/",
+    link: "https://superb-syrniki-b9d172.netlify.app/",
     watch:
       "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6999098222908436480",
     github: "https://github.com/actuallyakshay",
