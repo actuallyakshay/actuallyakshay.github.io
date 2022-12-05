@@ -19,6 +19,7 @@ function ProjectComponent({
   link,
   watch,
   github,
+  solo,
 }) {
   return (
     <Flex
@@ -39,6 +40,7 @@ function ProjectComponent({
       <br />
       <Box w="90%" mx="auto">
         <Text
+          // as='kbd'
           fontSize={"14px"}
           color="blackAlpha.800"
           fontWeight={"400"}
@@ -47,13 +49,25 @@ function ProjectComponent({
           {desc}
         </Text>
       </Box>
+      <Box w="90%" m="auto" mt="2">
+        <Text
+          fontSize={"14px"}
+          color="red"
+          as="kbd"
+          size="sm"
+          fontWeight={"400"}
+          letterSpacing=".7px"
+        >
+          ◉ {solo}
+        </Text>
+      </Box>
       <Box w="90%" m="auto" mt="4">
         <Text color="red" fontWeight={"500"} fontSize={"15px"}>
           Tech Stack :
         </Text>
         <Text
           fontSize={"14px"}
-          letterSpacing=".9px"
+          letterSpacing=".9px" 
           fontWeight={"500"}
           color="blackAlpha.700"
         >

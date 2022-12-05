@@ -75,6 +75,7 @@ const arr = [
     watch:
       "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7003064081771335680",
     github: "https://github.com/actuallyakshay",
+    solo: "A solo Project executed in 07 days",
   },
   {
     image:
@@ -86,6 +87,7 @@ const arr = [
     watch:
       "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6999098222908436480",
     github: "https://github.com/actuallyakshay",
+    solo: "A solo Project executed in 06 days",
   },
   {
     image:
@@ -97,6 +99,7 @@ const arr = [
     watch:
       "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6982799317782671361",
     github: "https://github.com/actuallyakshay/indeed.com-clone",
+    solo: "A solo Project executed in 05 days",
   },
   {
     image:
@@ -106,6 +109,7 @@ const arr = [
     desc: "This project is about building an E-Commerce food web application showing the functionalities of an E-Commerce food website like sorting, search food, add to cart, trending items etc.",
     link: "https://foodorderingapp-eta.vercel.app/",
     github: "https://github.com/actuallyakshay/FoodOrderingApp",
+    solo: "A solo Project executed in 01 day",
   },
   {
     image:
@@ -115,6 +119,7 @@ const arr = [
     desc: "It is a clone of a time tracking application Timely, It is based on pure HTML, CSS and javaScript.",
     link: "https://whimsical-empanada-8d6cc1.netlify.app/",
     github: "https://github.com/actuallyakshay/Timely.com-clone",
+    solo: "A Group Project executed in 05 days",
   },
   {
     image:
@@ -124,6 +129,7 @@ const arr = [
     desc: "This project is about building a nostalgic game based upon noughts and crosses, In this two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.",
     link: "https://tictactoe-gamma-five.vercel.app/",
     github: "https://github.com/actuallyakshay/TicTacToe",
+    solo: "A solo Project executed in 01 day",
   },
   {
     image:
@@ -133,5 +139,6 @@ const arr = [
     desc: "This project is about building a nostalgic game, which can handled by four keys, (up,down,left,right). Person can check its highscore also.",
     link: "https://prismatic-florentine-542a05.netlify.app/",
     github: "https://github.com/actuallyakshay/Snake-Game",
+    solo: "A solo Project executed in 01 day",
   },
 ];
