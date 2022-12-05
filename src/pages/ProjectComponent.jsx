@@ -63,13 +63,13 @@ function ProjectComponent({
       <br />
       <Box mt="auto" w="full">
         <HStack w="60%" m="auto" justifyContent={"space-between"}>
-          <a href={link}>
+          <a href={link} target="_blank">
             <AiFillEye fontSize={"40px"} />
           </a>
-          <a href={github}>
+          <a href={github} target="_blank">
             <BsGithub fontSize={"35px"} />
           </a>
-          <a href={watch}>
+          <a href={watch} target="_blank">
             <BsFillCameraVideoFill fontSize={"35px"} />
           </a>
         </HStack>

@@ -25,17 +25,6 @@ function EducationExp({ colorMode }) {
         gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
         position="relative"
       >
-        <Box
-          display={{ base: "none", md: "flex" }}
-          position={"absolute"}
-          opacity={colorMode === "light" ? ".6" : ".1"}
-          w="500px"
-          left="25%"
-          top="-20%"
-          color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
-        >
-          <FaUniversity fontSize="450px" />
-        </Box>
         <Flex flexDirection="column">
           <Flex w="full" justifyContent={"center"}>
             <Text

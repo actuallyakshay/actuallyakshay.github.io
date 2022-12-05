@@ -54,17 +54,6 @@ function ContactMe({ colorMode }) {
         overflow="hidden"
         position="relative"
       >
-        <Box
-          position={"absolute"}
-          opacity={colorMode === "light" ? ".7" : ".1"}
-          w="500px"
-          left="30%"
-          top="0"
-          color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
-          display={{ base: "none", md: "flex" }}
-        >
-          <RiContactsLine fontSize="400px" />
-        </Box>
         <Grid
           gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
           //   border="2px solid black"
@@ -151,7 +140,10 @@ function ContactMe({ colorMode }) {
                       damping: 60,
                     }}
                   >
-                    <a href="https://www.linkedin.com/in/akshay-rajput-422794220/">
+                    <a
+                      href="https://www.linkedin.com/in/akshay-rajput-422794220/"
+                      target="_blank"
+                    >
                       <IconButton
                         aria-label="linkedin"
                         variant="ghost"
@@ -161,7 +153,7 @@ function ContactMe({ colorMode }) {
                         icon={<FaLinkedinIn size="28px" />}
                       />
                     </a>
-                    <a href="https://github.com/actuallyakshay">
+                    <a target="_blank" href="https://github.com/actuallyakshay">
                       <IconButton
                         aria-label="github"
                         variant="ghost"
@@ -171,7 +163,10 @@ function ContactMe({ colorMode }) {
                         icon={<BsGithub size="28px" />}
                       />
                     </a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                    <a
+                      target="_blank"
+                      href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                    >
                       <IconButton
                         aria-label="Send email"
                         variant="ghost"

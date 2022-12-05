@@ -48,6 +48,9 @@ function Header() {
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
             display={{ md: "none" }}
+            variant="ghost"
+            _hover={{ bg: "none" }}
+            onFocus={{ bg: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
@@ -109,6 +112,7 @@ function Header() {
               bg="transparent"
               _hover={{ bg: "transparent" }}
               onClick={toggleColorMode}
+              variant="ghost"
             >
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>

@@ -29,13 +29,7 @@ function Hero({ colorMode }) {
     deleteSpeed: 70,
   });
   return (
-    <Box
-      id="HERO__"
-      pt="7"
-      overflow={"hidden"}
-      position="relative"
-      pb="12"
-    >
+    <Box id="HERO__" pt="7" overflow={"hidden"} position="relative" pb="12">
       <Box position={"absolute"} w="100%">
         <Image
           src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
@@ -93,11 +87,13 @@ function Hero({ colorMode }) {
         <HStack justifyContent={"center"} spacing="4" mb="2">
           <SocialIcon
             url="https://www.linkedin.com/in/akshay-rajput-422794220/"
+            target="_blank"
             fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
             style={{ height: 40, width: 40 }}
           />
           <SocialIcon
             fgColor={colorMode === "light" ? "white" : "gray.300"}
+            target="_blank"
             url="https://github.com/actuallyakshay"
             style={{ height: 40, width: 40 }}
           />
@@ -105,6 +101,7 @@ function Hero({ colorMode }) {
             url="https://mail.google.com/mail/u/0/#inbox?compose=new"
             className="cursor-pointer"
             network="email"
+            target="_blank"
             fgColor={colorMode === "light" ? "white" : "#FFFAF0"}
             bgColor="orange"
             style={{ height: 40, width: 40 }}
