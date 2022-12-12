@@ -1,4 +1,4 @@
-import { Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 import GitHubCalendar from "react-github-calendar";
@@ -25,7 +25,14 @@ function Github() {
     <>
       <br />
       <br />
-      <Flex w="full" justifyContent={"center"}>
+      <Flex w="full" justifyContent={"center"} position="relative">
+        <Box position={"absolute"} w="100%">
+          <Image
+            src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+            opacity=".3"
+            w="100%"
+          />
+        </Box>
         <Text
           color="orange.500"
           fontSize="22px"

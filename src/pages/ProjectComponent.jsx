@@ -20,11 +20,12 @@ function ProjectComponent({
   watch,
   github,
   solo,
+  colorMode,
 }) {
   return (
     <Flex
       direction="column"
-      bg="white"
+      bgColor={colorMode == "light" ? "white" : "white"}
       shadow={"xl"}
       borderRadius="20px"
       py="5"
@@ -33,7 +34,13 @@ function ProjectComponent({
         <Image borderRadius={"5px"} src={image} />
       </Box>
       <Flex w="full" justifyContent={"center"}>
-        <Heading mt="4" size="md" fontWeight={"500"} letterSpacing="2px">
+        <Heading
+          color={colorMode == "light" ? "Black" : "Black"}
+          mt="4"
+          size="md"
+          fontWeight={"500"}
+          letterSpacing="2px"
+        >
           {title}
         </Heading>
       </Flex>
@@ -67,7 +74,7 @@ function ProjectComponent({
         </Text>
         <Text
           fontSize={"14px"}
-          letterSpacing=".9px" 
+          letterSpacing=".9px"
           fontWeight={"500"}
           color="blackAlpha.700"
         >
@@ -78,13 +85,13 @@ function ProjectComponent({
       <Box mt="auto" w="full">
         <HStack w="60%" m="auto" justifyContent={"space-between"}>
           <a href={link} target="_blank">
-            <AiFillEye fontSize={"40px"} />
+            <AiFillEye color="Black" fontSize={"40px"} />
           </a>
           <a href={github} target="_blank">
-            <BsGithub fontSize={"35px"} />
+            <BsGithub color="Black" fontSize={"35px"} />
           </a>
           <a href={watch} target="_blank">
-            <BsFillCameraVideoFill fontSize={"35px"} />
+            <BsFillCameraVideoFill color="Black" fontSize={"35px"} />
           </a>
         </HStack>
       </Box>

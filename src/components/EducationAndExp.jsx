@@ -3,6 +3,7 @@ import {
   Flex,
   Grid,
   Heading,
+  Image,
   ListItem,
   Text,
   VStack,
@@ -25,6 +26,13 @@ function EducationExp({ colorMode }) {
         gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
         position="relative"
       >
+        <Box position={"absolute"} w="100%">
+          <Image
+            src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+            opacity=".3"
+            w="100%"
+          />
+        </Box>
         <Flex flexDirection="column">
           <Flex w="full" justifyContent={"center"}>
             <Text

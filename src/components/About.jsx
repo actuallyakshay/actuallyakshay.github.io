@@ -2,17 +2,24 @@ import { Box, Flex, Grid, Heading, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
 
-function About({colorMode}) {
+function About({ colorMode }) {
   return (
-    <Box id='ABOUT__' pt='4'>
-      <Flex justifyContent={"center"} mt="80px">
+    <Box id="ABOUT__" pt="4">
+      <Flex justifyContent={"center"} mt="80px" position={"relative"}>
+        <Box position={"absolute"} w="100%">
+          <Image
+            src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+            opacity=".3"
+            w="100%"
+          />
+        </Box>
         <Text
           color="orange.500"
           fontSize="22px"
           letterSpacing="20px"
           fontWeight="700"
         >
-        ABOUT
+          ABOUT
         </Text>
       </Flex>
       <br />

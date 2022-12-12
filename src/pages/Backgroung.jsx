@@ -5,17 +5,13 @@ import { GiSkills } from "react-icons/gi";
 
 function Backgroung({ colorMode }) {
   return (
-    <Box position="relative" >
-      <Box
-        display={{ base: "none", md: "flex" }}
-        position={"absolute"}
-        opacity={colorMode === "light" ? ".8" : ".1"}
-        w="500px"
-        left="5%"
-        top="27%"
-        color={colorMode === "light" ? "blackAlpha.100" : "#F7AB0A"}
-      >
-        <GiSkills fontSize="400px" />
+    <Box position="relative">
+      <Box position={"absolute"} w="100%">
+        <Image
+          src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+          opacity=".3"
+          w="100%"
+        />
       </Box>
       <WorkProjects />
     </Box>

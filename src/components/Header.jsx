@@ -16,6 +16,7 @@ import { Link, NavLink } from "react-router-dom";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useState } from "react";
 
 const Links = [
   { path: "HERO__", title: "HOME" },
@@ -28,19 +29,35 @@ const Links = [
 function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [navbar, setNavbar] = useState(false);
+
+  const changeNavbar = () => {
+    if (window.scrollY >= 400) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", () => {
+    changeNavbar();
+  });
+
   return (
     <>
       <Box
         fontFamily="Poppins"
         letterSpacing={"1.2px"}
-        bg={useColorModeValue("gray.800", "gray.800")}
+        bg={!navbar ? "gray.800" : "white"}
         px={{ base: "3", md: "8" }}
         position="fixed"
         top="0"
         left="0"
         right="0"
         zIndex={4}
-        color="white"
+        color={!navbar ? "white" : "black"}
+        shadow={!navbar ? "" : "md"}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -113,6 +130,8 @@ function Header() {
               _hover={{ bg: "transparent" }}
               onClick={toggleColorMode}
               variant="ghost"
+              color={!navbar ? "white" : "black"}
+              borderRadius={"full"}
             >
               {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             </Button>

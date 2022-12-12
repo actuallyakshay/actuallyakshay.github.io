@@ -1,4 +1,10 @@
-import { Box, transition, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  transition,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import About from "./components/About";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -13,16 +19,16 @@ function App() {
 
   return (
     <div style={{ overflowX: "hidden" }}>
-        <Header />
-        <Hero colorMode={colorMode} />
-        <About />
-        <Projects colorMode={colorMode} />
-        <Backgroung colorMode={colorMode} />
-        <Project colorMode={colorMode} />
-        <Github />
-        <br />
-        <br />
-        <ContactMe colorMode={colorMode} />
+      <Header />
+      <Hero colorMode={colorMode} />
+      <About />
+      <Projects colorMode={colorMode} />
+      <Backgroung colorMode={colorMode} />
+      <Project colorMode={colorMode} />
+      <Github />
+      <br />
+      <br />
+      <ContactMe colorMode={colorMode} />
     </div>
   );
 }

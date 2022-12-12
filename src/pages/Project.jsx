@@ -22,16 +22,21 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import TechStack from "../components/TechStack";
-import Project2 from "../components/Project2";
 import ProjectComponent from "./ProjectComponent";
 
 function Project({ colorMode }) {
   return (
-    <Box id="PROJECTS__" mt="10" bg="gray.50">
+    <Box id="PROJECTS__" mt="10" position="relative">
       <br />
       <br />
-      <Flex w="full" justifyContent={"center"}>
+      <Box position={"absolute"} w="100%">
+        <Image
+          src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+          opacity=".3"
+          w="100%"
+        />
+      </Box>
+      <Flex w="full" justifyContent={"center"} position="relative">
         <Text
           color="orange.500"
           fontSize="22px"
@@ -55,7 +60,7 @@ function Project({ colorMode }) {
         rowGap={"9"}
       >
         {arr?.map((el, i) => {
-          return <ProjectComponent key={i} {...el} />;
+          return <ProjectComponent colorMode={colorMode} key={i} {...el} />;
         })}
       </Grid>
     </Box>

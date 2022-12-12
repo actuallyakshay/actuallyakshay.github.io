@@ -19,6 +19,7 @@ import {
   InputLeftElement,
   Textarea,
   Grid,
+  Image,
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -54,6 +55,13 @@ function ContactMe({ colorMode }) {
         overflow="hidden"
         position="relative"
       >
+        <Box position={"absolute"} w="100%">
+          <Image
+            src="https://d1edzrgaei4psf.cloudfront.net/newHome/12.svg"
+            opacity=".3"
+            w="100%"
+          />
+        </Box>
         <Grid
           gridTemplateColumns={{ base: "1fr", md: "repeat(2,1fr)" }}
           //   border="2px solid black"
