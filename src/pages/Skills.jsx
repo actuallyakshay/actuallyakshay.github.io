@@ -14,6 +14,7 @@ let array = [
   "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-128.png",
   "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-128.png",
   "https://i.ibb.co/jZMcZMC/javascript.png",
+  "https://user-images.githubusercontent.com/107462720/209814072-918f6b90-982e-49a0-b445-8e535f598c29.png",
   "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-128.png",
   "https://i.ibb.co/8cx8KzC/6202fcdee5ee8636a145a41b-1234.png",
   "https://i.ibb.co/dMhVT7t/mongodb.png",
