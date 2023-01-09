@@ -47,7 +47,6 @@ function Github() {
       <Flex justifyContent={"center"}>
         <GitHubCalendar
           username="actuallyakshay"
-          transformData={selectLastHalfYear}
           blockRadius="2"
           theme="nord"
         />
