@@ -21,6 +21,7 @@ function ProjectComponent({
   github,
   solo,
   colorMode,
+  area,
 }) {
   return (
     <Flex
@@ -57,8 +58,28 @@ function ProjectComponent({
         </Text>
       </Box>
       <Box w="90%" m="auto" mt="2">
+        <Heading
+          letterSpacing="1px"
+          fontSize={"13px"}
+          fontWeight="500"
+          display={area ? "flex" : "none"}
+        >
+          Responsibilities
+        </Heading>
+        {area &&
+          area.map((el, i) => {
+            return (
+              <Text
+                letterSpacing=".4px"
+                fontSize={"13px"}
+                color="blackAlpha.800"
+              >
+                • {el}
+              </Text>
+            );
+          })}
         <Text
-          fontSize={"14px"}
+          fontSize={"13px"}
           color="red"
           as="kbd"
           size="sm"
@@ -77,6 +98,7 @@ function ProjectComponent({
           letterSpacing=".9px"
           fontWeight={"500"}
           color="blackAlpha.700"
+          width={area ? "full" : "100px"}
         >
           {techStack}
         </Text>

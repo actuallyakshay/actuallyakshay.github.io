@@ -86,7 +86,7 @@ const arr = [
     image:
       "https://res.cloudinary.com/dhxtxmw5n/image/upload/v1669809646/CultFit_qsaxju.png",
     title: "Cultsport Clone",
-    techStack: "NodeJS, expressJS, mongoDB, React, Redux, chakra-UI",
+    techStack: "NodeJS, expressJS, mongoDB, mongoose, React, Redux, chakra-UI",
     desc: "This Project is about building an online E-Commerce web application with backend integration showing all the functionalities of an E-Commerce website along with the admin dashboard panel. This is private repository to protect the code for its uniqueness.",
     link: "https://superb-syrniki-b9d172.netlify.app/",
     watch:
@@ -96,9 +96,27 @@ const arr = [
   },
   {
     image:
+      "https://user-images.githubusercontent.com/107462720/211299643-489751f2-31ab-4b54-addc-993e3a245aa0.png",
+    title: "Pharmeasy Clone",
+    techStack:
+      "TypeScript, NodeJS, expressJS, mongoDB, mongoose, React, Redux, chakra-UI, own npm-package",
+    desc: "This is a clone of famous E-Commerce Pharma web application, which provides healthcare products, labtests , health packages etc.",
+    link: "https://pharmeasy-rho.vercel.app/",
+    watch: "https://pharmeasy-rho.vercel.app/",
+    github: "https://github.com/actuallyakshay/Pharmeasy-Clone",
+    solo: "A Group Project of 2 members, executed in 07 days",
+    area: [
+      "Handled whole backend with all the functionalities filter, sorting, searching, relationships in cart, trash items, role based access control system with Authentication (login/signup with jwt and bcrypt) and many more",
+      "Pages in frontend :- Whole Admin Panel along with (login/Signup, Medicine, healthcare, Cart)",
+      "Created own npm package and used it in this project",
+    ],
+  },
+  {
+    image:
       "https://res.cloudinary.com/dhxtxmw5n/image/upload/v1669809657/Indeed_jjdfeh.png",
     title: "Indeed Clone",
-    techStack: "NodeJS, expressJS, mongoDB, Firebase, React, chakra-UI",
+    techStack:
+      "NodeJS, expressJS, mongoDB, mongoose, Firebase, React, chakra-UI",
     desc: "It is a clone of famous job portal web application indeed, where I implemented all the functionalities like saved job upload resume seacrh jobs as per the requirement of qualification ans many more.",
     link: "https://indeedclone-five.vercel.app/",
     watch:
