@@ -22,6 +22,7 @@ let array = [
   "https://cdn1.iconfinder.com/data/icons/soleicons-fill-vol-1/64/reactjs_javascript_library_atom_atomic_react-128.png",
 
   "https://i.ibb.co/RSvZL6j/redux.png",
+  "https://user-images.githubusercontent.com/107462720/211248122-67a394db-7603-47b2-8c8e-0699e05ea0f3.svg",
   "https://i.ibb.co/4PNb6C0/rzyl-Ujaf-400x400-removebg-preview.png",
   "https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_github-128.png",
 
