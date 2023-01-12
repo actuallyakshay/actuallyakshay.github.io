@@ -128,7 +128,7 @@ function ContactMe({ colorMode }) {
                       _hover={{ border: "1px solid #dd6b20" }}
                       leftIcon={<MdLocationOn color="#dd6b20" size="20px" />}
                     >
-                      Lucknow, U.P.
+                      Lucknow, Utter Pradesh
                     </Button>
                   </VStack>
                 </Box>

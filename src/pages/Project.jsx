@@ -75,11 +75,11 @@ const arr = [
       "https://res.cloudinary.com/dhxtxmw5n/image/upload/v1669808114/facebook_qpaosw.png",
     title: "Facebook Clone",
     techStack: "NodeJS, expressJS, mongoDB, React, Redux, chakra-UI",
-    desc: "This is a clone of Facebook with backend integration, in which I implemented many functionalities as like, comments, createpost, delete post, update account, create Story, view other stories, add friends,add followers and many more. This is private repository to protect the code for its uniqueness.",
+    desc: "This is a clone of Facebook with backend integration, in which I implemented many functionalities as like, comments, createpost, delete post, update account, create Story, view other stories, add friends,add followers and many more",
     link: "https://facbook.vercel.app/",
     watch:
       "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7003064081771335680",
-    github: "https://github.com/actuallyakshay",
+    github: "https://github.com/actuallyakshay/Facebook-Clone",
     solo: "A solo Project executed in 07 days",
   },
   {
@@ -87,11 +87,11 @@ const arr = [
       "https://res.cloudinary.com/dhxtxmw5n/image/upload/v1669809646/CultFit_qsaxju.png",
     title: "Cultsport Clone",
     techStack: "NodeJS, expressJS, mongoDB, mongoose, React, Redux, chakra-UI",
-    desc: "This Project is about building an online E-Commerce web application with backend integration showing all the functionalities of an E-Commerce website along with the admin dashboard panel. This is private repository to protect the code for its uniqueness.",
+    desc: "This Project is about building an online E-Commerce web application with backend integration showing all the functionalities of an E-Commerce website along with the admin dashboard panel",
     link: "https://superb-syrniki-b9d172.netlify.app/",
     watch:
       "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6999098222908436480",
-    github: "https://github.com/actuallyakshay",
+    github: "https://github.com/actuallyakshay/CultFit",
     solo: "A solo Project executed in 06 days",
   },
   {
